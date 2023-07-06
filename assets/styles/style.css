@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --branco-fundo: #F9FAFB;
+    --cinza-borda: #D0D5DD;
+    --cinza-claro: #EAECF0;
+    --cinza: #667085;
+    --cinza-marca: #98A2B3;
+    --cinza-escuro: #101828;
+    --vermelho: #8E2424;
+    --vermelho-hover: #8e2424c9;
+    --branco: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--fonte-principal);
+}
+
+
+/* header css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 5rem;
+}
+
+.header a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header li {
+    list-style: none;
+}
+
+.links__header {
+    display: flex;
+    gap: 2rem;
+}
+
+.header__links {
+    color: var(--cinza);
+}
+
+.header__links:hover {
+    color: var(--cinza-escuro);
+}
+
+.blankspace {
+    width: 8.875rem;
+}
+
+.login__header {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.login__header .header__links {
+    padding: 0.625rem 1.125rem;
+}
+
+.cadastro__header {
+    padding: 0.625rem 1.125rem;
+    color: #fff;
+    background-color: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    border-radius: 0.5rem;
+}
+
+.cadastro__header:hover {
+    color: var(--cinza-borda);
+    background-color: var(--vermelho-hover);
+}
+
+/* apresentação css */
+.main__apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+}
+
+.apresentacao__sobre {
+    color: var(--vermelho);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.apresentacao__titulo {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.06rem;
+    padding: 1.5rem;
+}
+
+.apresentacao__subtitulo {
+    color: var(--cinza);
+    width: 49.5rem;
+    text-align: center;
+    padding-top: 0.75rem;
+}
+
+/* estatísticas css */
+.estatisticas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem 6rem 5rem;
+    gap: 2rem;
+}
+
+.estatisticas__container {
+    width: 17.5rem;
+}
+
+.estatisticas__numeros {
+    color: var(--vermelho);
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    letter-spacing: -0.075rem;
+}
+
+.estatisticas__subtitulo {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin-top: 0.75rem;
+}
+
+.estatisticas__texto {
+    color: var(--cinza);
+    line-height: 1.5rem;
+    margin-top: 0.25rem;
+}
+
+/* vagas css */
+.vagas {
+    display: flex;
+    flex-direction: column;
+}
+
+.vagas__textos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vagas__texto {
+    color: var(--vermelho);
+    line-height: 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    background: rgba(142, 36, 36, 0.05);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.vagas__titulo{
+    color: var(--cinza-escuro);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+    margin-bottom: 1.25rem;
+}
+
+.vagas__subtitulo{
+    color: var(--cinza);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 4rem;
+}
+
+.vagas__imagem {
+    width: auto;
+    height: 25rem;
+    margin-bottom: 4rem;
+}
+
+.vagas__container {
+    display: flex;
+    padding: 0rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.vagas__categorias {
+    color: var(--cinza-escuro);
+    width: 48rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.vagas__funcoes {
+    display: flex;
+    padding: 1.5rem 1.5rem 1.75rem 1.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    width: 48rem;
+    border-radius: 1rem;
+    border: 1px solid var(--cinza-claro);
+    background: var(--branco);
+}
+
+.vagas__funcoes:hover {
+    background: var(--branco-fundo);
+}
+
+.vagas__formacao {
+    color: var(--cinza-escuro);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.vagas__informacoes {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--cinza);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+/* sobre (opinião) css */
+.sobre {
+    border-radius: 1rem;
+    background: rgba(195, 25, 25, 0.03);
+    display: flex;
+    padding: 4rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 7rem 0 7rem;
+}
+
+.sobre__texto {
+    color: var(--vermelho);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.sobre__titulo {
+    color: var(--cinza-escuro);
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: -.045rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sobre__imagem {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.sobre__nome {
+    color: var(--cinza-escuro);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.sobre__funcao {
+    color: var(--cinza);
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+/* rodapé css */
+.rodape {
+    background: var(--branco-fundo);
+    padding: 6rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rodape__titulo {
+    color: var(--cinza-escuro);
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -0.045rem;
+    margin-bottom: 1.25rem;
+}
+
+.rodape__texto {
+    color: var(--cinza);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    margin-bottom: 2.5rem;
+}
+
+.rodape__email {
+    display: flex;
+    gap: 2.25rem;
+    margin-bottom: 2.75rem;
+}
+
+.rodape__email__campo {
+    padding: 0.75rem 0.875rem 0.75rem 1rem;
+    border: 1px solid var(--cinza-borda);
+    border-radius: 0.5rem;
+    line-height: 1.5rem;
+    width: 22.5rem;
+}
+
+.rodape__email__campo::placeholder {
+    color: var(--cinza);
+}
+
+.rodape__botao {
+    background: var(--vermelho);
+    border: 1px solid var(--vermelho);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    color: #FFF;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+.rodape__botao:hover {
+    background: var(--vermelho-hover);
+    color: var(--cinza-borda);
+}
+
+.rodape__marca {
+    color: var(--cinza-marca);
+    line-height: 1.5rem;
+}
